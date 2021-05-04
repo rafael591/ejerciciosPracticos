@@ -244,10 +244,7 @@ public class CodigoMorse {
         for (int i = 0; i < caracter.length; i++) {
             if (String.valueOf(caracter[i]).equals(" ")) {
                 System.out.println(" ");
-            } else{
-                System.out.println(codigoMorse(caracter[i]));
-            }
-            
+            } 
         }
         }
     
@@ -396,12 +393,14 @@ public class CodigoMorse {
             if(String.valueOf(caracter[i]).equals(" ")) {
                 System.out.println(" ");
             } else{
-                System.out.println(aCodigo[codigoMorse(caracter[i])][0] + " =");
-                System.out.println(aCodigo[codigoMorse(caracter[i])][1] + " =");
+                System.out.print(aCodigo[codigoMorse(caracter[i])][0] + " =");
+                System.out.println(aCodigo[codigoMorse(caracter[i])][1]);
             }
         }
         //Con su algoritmo de impresión del código morse, lea una frase y contabilice las palabras si son menos
         //de 5 cobrar 10 pesos y por cada palabra extra cobrar 3 pesos, calcule e imprima el total a pagar y la frase en código morse
+        System.out.println("Las palabras ingresadas y el costo son: ");
+        
         fraseCobrar(palabraIngresada, caracter);
         
         System.out.println(cobroFra(palabraIngresada, caracter));
